@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+
+div.container{
+	border-style:inset; 
+	border-color: navy;
+	size: 5px;
+	 height: 300px;
+    width: 35%;
+    table-layout: auto;
+    position: relative;
+  vertical-align: middle;  
+	
+}
+h1{
+text-align: center;
+font-size: 30px;
+
+ 
+}
+hr{
+margin-bottom: 30px;
+}
+
+body {
+background-image: url("Background.jpg"); 
+background-repeat: repeat-x; 
+
+	}
+
+label{
+color: black;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+}
+
+table{
+	margin-top: 20px; 
+	
+}
+
+
+
+
+
+#register {
+ padding: .5rem 2.5rem;
+  font-size: .95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #111;
+  border-radius: remy(35px);
+  &:focus,
+  &:hover {background: lighten(#111, 13%);}
+#register:hover{
+background: linear-gradient(#36caf0 50%, #22abe9 100%);
+}

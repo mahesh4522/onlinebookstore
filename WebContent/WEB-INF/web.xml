@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+<welcome-file-list>
+<welcome-file>./jsp/Login.jsp</welcome-file>
+</welcome-file-list>
+  <display-name>BookStore</display-name>
+  		<servlet>
+  		<servlet-name>Register</servlet-name>
+  		<servlet-class>com.mahesh.servlets.Registration</servlet-class>
+  		</servlet>
+ 	 	<servlet-mapping>
+  		<servlet-name>Register</servlet-name>
+  		<url-pattern>/registrationPage</url-pattern>
+  		</servlet-mapping>
+  
+<servlet>
+<servlet-name>Login</servlet-name>
+<servlet-class>com.mahesh.servlets.Login</servlet-class>
+</servlet>
+  
+<servlet-mapping>
+<servlet-name>Login</servlet-name>
+<url-pattern>/loginPage</url-pattern>
+</servlet-mapping>
+  
+		<servlet>
+		<servlet-name>BookDetails</servlet-name>
+		<servlet-class>com.mahesh.servlets.BookDetails</servlet-class>
+		</servlet>  
+  		
+  		<servlet-mapping>
+  		<servlet-name>BookDetails</servlet-name>
+  		<url-pattern>/bookDetails</url-pattern>
+  		</servlet-mapping>
+  
+ <servlet>
+ <servlet-name>welcome</servlet-name>
+ <jsp-file>/Welcome.jsp</jsp-file>
+ </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>welcome</servlet-name>
+  <url-pattern>/welcomePage</url-pattern>
+  </servlet-mapping>		
+ 	
+  		
+  	<servlet>
+  	<servlet-name>orderdetails</servlet-name>
+  	<servlet-class>com.mahesh.servlets.OrderDetails</servlet-class>
+  	</servlet>	
+  	<servlet-mapping>
+  	<servlet-name>orderdetails</servlet-name>
+  	<url-pattern>/orderDetails</url-pattern>
+  	</servlet-mapping>
+  		
+  		
+  		<servlet>
+  		<servlet-name>updatepassword</servlet-name>
+  		<servlet-class>com.mahesh.servlets.Forgetpass</servlet-class>
+  		</servlet>
+  		<servlet-mapping>
+  		<servlet-name>updatepassword</servlet-name>
+  		<url-pattern>/updatepass</url-pattern>
+  		</servlet-mapping>
+  		
+  		<servlet>
+  		<servlet-name>logout</servlet-name>
+  		<servlet-class>com.mahesh.servlets.Logout</servlet-class>
+  		</servlet>
+  		
+  		<servlet-mapping>
+  		<servlet-name>logout</servlet-name>
+  		<url-pattern>/logout</url-pattern>
+  		</servlet-mapping>
+  			
+  	
+</web-app>
